@@ -22,7 +22,7 @@ namespace CalculatorWpfApp
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
     }
 }
