@@ -20,7 +20,7 @@ namespace CalculatorWpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        double lastNumber, result;
+        double lastNumber;
         SelectedOperator selectedOperator;
         public MainWindow()
         {
