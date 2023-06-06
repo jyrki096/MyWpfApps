@@ -5,10 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopContactsApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="250">
     <Grid>
         <StackPanel Margin="10">
             <Button Content="Добавить новый контакт" Click="Button_Click"/>
+            <TextBox Margin="0 5 0 5" TextChanged="TextBox_TextChanged"/>
+            <ListView Margin="0 5 0 0" 
+                      x:Name="contactsListView" 
+                      Height="180"
+                      SelectionChanged="contactsListView_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Email}" FontSize="15" Foreground="DodgerBlue"/>
+                            <TextBlock Text="{Binding PhoneNumber}" FontSize="15" FontStyle="Italic"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackPanel>
     </Grid>
 </Window>

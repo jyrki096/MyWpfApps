@@ -21,9 +21,11 @@ namespace DesktopContactsApp
     /// </summary>
     public partial class NewContactWindow : Window
     {
+
         public NewContactWindow()
         {
             InitializeComponent();
+  
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
