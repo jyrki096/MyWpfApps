@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopContactsApp"
         mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
         Title="ContactDetailsWindow" Height="450" Width="350">
     <Grid>
         <Grid>
             <StackPanel>
+                <TextBlock Text="Имя:" FontSize="15"/>
                 <TextBox x:Name="nameTextBox" Margin="0, 0, 0, 5"/>
+                <TextBlock Text="Email:" FontSize="15"/>
                 <TextBox x:Name="emailTextBox" Margin="0, 0, 0, 5"/>
+                <TextBlock Text="Телефон:" FontSize="15"/>
                 <TextBox x:Name="phoneTextBox" Margin="0, 0, 0, 5"/>
                 <Button Content="Обновить" FontSize="20" FontWeight="Bold" Click="Update_Button_Click"/>
                 <Button Content="Удалить" FontSize="20" FontWeight="Bold" Background="Red" Click="Delete_Button_Click"/>

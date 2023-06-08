@@ -26,6 +26,8 @@ namespace DesktopContactsApp
         {
             InitializeComponent();
             this.contact = contact;
+            Owner = Application.Current.MainWindow;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
             nameTextBox.Text = contact.Name;
             emailTextBox.Text = contact.Email;
             phoneTextBox.Text = contact.PhoneNumber;
