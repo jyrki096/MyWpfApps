@@ -1,9 +1,10 @@
 ﻿<Application x:Class="WeatherApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WeatherApp"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
+             xmlns:local="clr-namespace:WeatherApp.View">
+
+    <Application.MainWindow>
+        <local:WeatherWindow Visibility="Visible"/>
+    </Application.MainWindow>
+    
 </Application>

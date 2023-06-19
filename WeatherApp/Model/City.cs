@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WeatherApp.Model
+﻿namespace WeatherApp.Model
 {
-
-
     public class Area
     {
         public string ID { get; set; }
@@ -21,7 +13,9 @@ namespace WeatherApp.Model
         public string Type { get; set; }
         public int Rank { get; set; }
         public string LocalizedName { get; set; }
-        public Country Country { get; set; }
+        public Area Country { get; set; }
         public Area AdministrativeArea { get; set; }
     }
+
+
 }

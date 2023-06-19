@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace WeatherApp.Model
 {
     public class Units
     {
-        public double Value { get; set; }
+        public string Value { get; set; }
         public string Unit { get; set; }
         public int UnitType { get; set; }
     }
 
-
     public class Temperature
     {
         public Units Metric { get; set; }
-        public Imperial Imperial { get; set; }
+        public Units Imperial { get; set; }
     }
 
     public class CurrentConditions
@@ -33,5 +29,4 @@ namespace WeatherApp.Model
         public string MobileLink { get; set; }
         public string Link { get; set; }
     }
-
 }
