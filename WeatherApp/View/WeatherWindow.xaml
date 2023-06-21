@@ -8,6 +8,7 @@
         xmlns:vm="clr-namespace:WeatherApp.ViewModel"
         mc:Ignorable="d"
         Title="WeatherWindow" Height="600" Width="400">
+
     <Window.Resources>
         <vm:WeatherVM x:Key="vm"/>
         <converters:BoolToRainConverter x:Key="boolToRain"/>
